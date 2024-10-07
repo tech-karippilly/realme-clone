@@ -246,3 +246,62 @@ nav i {
     font-style: normal;
     font-size: 15px;
 }
+
+.card-section{
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.row-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-container{
+    position: relative;
+    width: 40%;
+    height: 40vh;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.card-container img{
+    transition: transform 0.5s ease-in
+}
+
+.card-container:hover img {
+    transform: scale(1.1); 
+}
+
+
+.card-text-container{
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.card-text-container h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card-text-container h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
